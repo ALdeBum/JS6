@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Nested List</title>
+    <style>
+        #list-container {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="add-list">Добавить новый список</button>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="action" value="add-end"> Добавить новый элемент в конец списка
+        </label>
+        <label>
+            <input type="radio" name="action" value="insert"> Вставить новый элемент списка в заданную позицию
+        </label>
+        <label>
+            <input type="radio" name="action" value="edit"> Изменить текст элемента списка
+        </label>
+        <label>
+            <input type="radio" name="action" value="add-sublist"> Добавить вложенный список
+        </label>
+        <label>
+            <input type="radio" name="action" value="delete"> Удалить элемент списка
+        </label>
+        <br>
+        <input type="text" id="text-input" placeholder="Введите текст">
+    </div>
+    <div id="list-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
